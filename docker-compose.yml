@@ -1,0 +1,8 @@
+version: "3.7"
+services:
+  solid-server:
+    image: solidproject/community-server:latest
+    ports:
+      - "3000:3000"
+    volumes:
+      - ~/Solid:/data
