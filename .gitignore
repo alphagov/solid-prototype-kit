@@ -128,3 +128,10 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Compiled CSS
+public/stylesheets/
+
+# CSS extensions
+lib/extensions/_extensions.scss
+public/stylesheets/*.css
