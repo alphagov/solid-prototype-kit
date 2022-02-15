@@ -12,6 +12,9 @@
     "test": "npm run lint && gulp generate-assets && jest"
   },
   "dependencies": {
+    "@inrupt/solid-client": "^1.19.0",
+    "@inrupt/solid-client-authn-browser": "^1.11.3",
+    "@inrupt/vocab-common-rdf": "^1.0.3",
     "acorn": "^8.5.0",
     "ansi-colors": "^4.1.1",
     "basic-auth": "^2.0.0",
