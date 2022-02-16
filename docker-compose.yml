@@ -8,14 +8,14 @@ services:
     volumes:
       - ~/Solid:/data
 
-  barking-permit-app:
+  client-app:
     build: .
-    image: barking-permit
+    image: client
     volumes:
-      - ./node_modules:/barking-permit/node_modules
-      - ./app:/barking-permit/app
-    working_dir: /barking-permit
+      - ./node_modules:/client/node_modules
+      - ./app:/client/app
+    working_dir: /client
     ports:
-      - "3001:3000"
+      - "3001:1234"
     stdin_open: true
     tty: true

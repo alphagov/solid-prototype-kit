@@ -1,12 +1,10 @@
 FROM node:16
 
-WORKDIR /barking-permit
+WORKDIR /client
 
-COPY package*.json ./
-
+COPY ./app .
 RUN npm install
-COPY . .
 
 EXPOSE 3000
 
-CMD ["node", "start"]
+CMD ["npx", "parcel", "index.html"]
